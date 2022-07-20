@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  margin: auto;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-data {
+  display: none;
+}
+
+input , select {
+  padding: 5px;
+}
+
+.trybewarts-login {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.trybewarts-login input , .trybewarts-login button {
+  padding: 7px;
+  border-radius: 5px;
+  border: solid 0;
+}
+
+img {
+  height: 40px;
+}
+
+.evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.trybewarts-forms-logo {
+  height: 500px;
+}
+
+.nome-container {
+  display: flex;
+}
+
+.nome-container input {
+  flex-basis: 50%;
+}
+
+.input-choices {
+  display: flex;
+  gap: 15px;
+}
+
+.input-choices :nth-child( 1 ) {
+  order: 2;
+}
+
+.input-choices :nth-child( 2 ) {
+  order: 1;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.form-container input , .house {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.count {
+  color: green;
+  align-self: flex-end;
+}
+
+
+.rate-container {
+  margin: 10px 0;
+}
+
+@media ( max-width : 1333px ) {
+
+  .trybewarts-forms-logo {
+    display: none;
+  }
+
+  .form-container {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-container input , .house {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .input-choices , .rate-container , .textarea-container , .agree-container {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .header {
+    padding-bottom: 20px;
+  }
+
+  .input-choices {
+    flex-direction: column;
+  }
+}
